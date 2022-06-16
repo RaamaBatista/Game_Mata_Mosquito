@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Jogo</title>
+</head>
+
+<link rel="stylesheet" href="app.css">
+<!--Chamando a função do js que determina o tamanho da tela por todo o body-->
+
+<body onresize="tamanho()">
+
+    <div class="principal">
+        <div class="vidas">
+            <img id="cheio1" src="coracao_cheio.png">
+            <img id="cheio2" src="coracao_cheio.png">
+            <img id="cheio3" src="coracao_cheio.png">
+
+
+        </div>
+        <div class="tempo">Tempo Restante: 
+             <span id="tempoRestante">
+
+        </span></div>
+
+    </div>
+
+
+</body>
+<script src="app.js"></script>
+
+<script>setInterval(function () {
+        gerador()
+    }, nivelTemp)
+</script>
+
+</html>
